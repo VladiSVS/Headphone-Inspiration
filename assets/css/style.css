@@ -1,0 +1,477 @@
+@font-face {
+    font-family: 'Work-Sans-Regular';
+    src: url(../fonts/Work_Sans/static/WorkSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Work-Sans-Light';
+    src: url(../fonts/Work_Sans/static/WorkSans-Light.ttf);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work-Sans-Regular';
+    background: #2e2e2e;
+}
+
+h2, p, a {
+    margin: 0;
+    text-decoration: none;
+}
+
+h1 {
+    color: #ebccc2;
+    margin: 5% 0 10% 0;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+h2 {
+    font-family: 'Work-Sans-Light';
+    color: #ebccc2;
+    font-size: 1.5em;
+}
+
+p {
+    font-family: 'Work-Sans-Light';
+    color: #867772;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+a {
+    font-family: 'Work-Sans-Light';
+    color: #867772;
+    font-size: 0.9em;
+}
+
+span {
+    color: #867772;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* header nav  */
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    position: fixed;
+    content: url(../img/logo.svg);
+    width: 3em;
+    top: 3%;
+    left: 5%;
+}
+
+header > nav:first-of-type {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 8vh;
+    width: 100%;
+}
+
+header > nav:first-of-type > ul > li > a:hover {
+    color: #ebccc2;
+    border-bottom: 1px solid #ebccc2;
+    padding-bottom: 0.3em;
+    transition: 0.5s;
+}
+
+header > nav:first-of-type > ul {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin-right: 10%;
+}
+
+header > nav:first-of-type > ul > li:nth-of-type(2) {
+    width: 40%;
+    text-align: center;
+}
+
+header > nav:first-of-type > ul > li:nth-of-type(2) > a:not(:nth-of-type(3)) {
+    margin-right: 5%;
+}
+
+header > nav:last-of-type {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 5%;
+    left: 2%;
+    height: 100vh;
+}
+
+header > nav:last-of-type > ul {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header > nav:last-of-type > ul > li {
+    display: flex;
+    align-items: center;
+}
+
+header > nav:last-of-type > ul > li > a{
+    text-align: left;
+}
+
+header > nav:last-of-type > ul > li > a:hover {
+    color: #ebccc2;
+    font-family: 'Work-Sans-Regular';
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+header > nav:last-of-type > ul > li > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1em;
+}
+
+.circleNav {
+    width: 1em;
+    height: 1em;
+    border: 1px solid #867772;
+    border-radius: 50%;
+}
+
+.outerCircle {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    border: 2px solid #ebccc2;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
+.lineNav {
+    position: absolute;
+    height: 7%;
+    border: 1px solid #867772;
+    margin-top: 1.5em;
+}
+
+.bold {
+    color: #ebccc2;
+    font-family: 'Work-Sans-Regular';
+    font-size: 1.1em;
+}
+
+
+/* about */
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+}
+
+#about > div:first-of-type {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    margin-bottom: 10%;
+}
+
+#about > div:last-of-type {
+    width: 100%;
+    content: url(../img/section-about-1.jpg);
+    margin-bottom: 10%;
+}
+
+#about > article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about > article > div {
+    width: 35%;
+    height: 100%;
+}
+
+#about > article > div > h1 {
+    margin-bottom: 5%;
+}
+
+#about > article > div:first-of-type {
+    content: url(../img/BS1_NYC_Home.webp);
+    margin-right: 5%;
+}
+
+#about > article > div:last-of-type {
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* lounger */
+
+#lounger {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+#lounger > article:first-of-type {
+    width: 55%;
+    height: 100vh;
+    content: url(../img/section-voyager.jpg);
+}
+
+#lounger > article:last-of-type {
+    width: 45%;
+    padding: 0 10% 0 5%;
+}
+
+#lounger > article:last-of-type > h1 {
+    margin-bottom: 20%;
+}
+
+/* experience */
+
+#experience {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+#experience > article:first-of-type {
+    width: 55%;
+    height: 100vh;
+    content: url(../img/section-experience-1.jpg);
+}
+
+#experience > article:last-of-type {
+    width: 45%;
+    padding: 0 10% 0 5%;
+}
+
+#experience > article:last-of-type > h1 {
+    margin-bottom: 20%;
+}
+
+/* insperation */
+
+#insperationTop {
+    padding: 10% 20%;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#insperationTop > article {
+    display: flex;
+    justify-content: center;
+}
+
+#insperationTop > article > video {
+    width: 55vw;
+}
+
+#insperationMid {
+    padding: 10% 20%;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#insperationMid > article > span {
+    border: 2px solid #867772;
+    letter-spacing: 0.1em;
+    padding: 1%;
+}
+
+#insperationMid > article > p {
+    margin-top: 3%;
+}
+
+#insperationDown {
+    display: flex;
+    justify-content: center;
+    padding: 10% 20%;
+}
+
+#insperationDown > article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#insperationDown > article > div {
+    width: 50%;
+}
+
+#insperationDown > article > div:nth-of-type(1) {
+    content: url(../img/ETC_6.webp);
+}
+
+#insperationDown > article > div:nth-of-type(2) > div {
+    padding: 6%;
+}
+
+#insperationDown > article > div:nth-of-type(3) > div {
+    padding: 6%;
+}
+
+#insperationDown > article > div:nth-of-type(4) {
+    content: url(../img/ETC_5.webp);
+}
+
+/* SHOP */
+
+#shop {
+    display: flex;
+    flex-direction: row;
+}
+
+#shop > article:first-of-type {
+    width: 55%;
+    height: 100vh;
+    content: url(../img/section-composition4.jpg);
+}
+
+#shop > article:last-of-type {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#shop > article:last-of-type > div {
+    content: url(../img/h9-argilla-bright-hero-1000x1000.webp);
+    width: 70%;
+}
+
+#shop > article:last-of-type > h2 {
+    margin-bottom: 1%;
+}
+
+#shop > article:last-of-type > p {
+    margin-bottom: 3%;
+}
+
+#shop > article:last-of-type > span {
+    margin-bottom: 1%;
+}
+
+#shop > article:last-of-type > button {
+    font-family: 'Work-Sans-Regular';
+    border: 1px solid #ebccc2;
+    background: #ebccc2;
+    padding: 2% 4%;
+    color: #867772;
+    letter-spacing: 0.2em;
+}
+
+#shop > article:last-of-type > button:hover {
+    cursor: pointer;
+}
+
+/* contacts */
+
+#contact {
+    display: flex;
+    flex-direction: row;
+}
+
+#contact > article:first-of-type {
+    width: 55%;
+    height: 100vh;
+    content: url(../img/section-composition4.jpg);
+}
+
+#contact > article:last-of-type {
+    padding: 5%;
+}
+
+#contact > article:last-of-type {
+    width: 45%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contact > article:last-of-type > form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#contact > article:last-of-type > form > input {
+    background: #2e2e2e;
+    border: 1px solid #867772;
+    font-family: 'Work-Sans-Light';
+    font-size: 1em;
+    color: #767575;
+}
+
+#contact > article:last-of-type > form > textarea {
+    background: #2e2e2e;
+    border: 1px solid #867772;
+    font-family: 'Work-Sans-Light';
+    font-size: 1em;
+    color: #ebccc2;
+    width: 100%;
+    height: 70%;
+    margin: 2% 0;
+}
+
+#contact > article:last-of-type > form > select {
+    background: #2e2e2e;
+    border: 1px solid #867772;
+    font-family: 'Work-Sans-Light';
+    font-size: 1em;
+    color: #ebccc2;
+}
+
+#contact > article:last-of-type > form > input::placeholder {
+    padding-left: 0.5em;
+}
+
+#contact > article:last-of-type > form > textarea::placeholder {
+    padding-left: 0.5em;
+    padding-top: 0.5em;
+}
+
+#contact > article:last-of-type > form > input:not(:nth-of-type(5)) {
+    width: 48%;
+    height: 25%;
+    margin-bottom: 2%;
+}
+
+#contact > article:last-of-type > form > input:nth-of-type(5) {
+    width: 81.5%;
+    height: 20%;
+}
+
+#contact > article:last-of-type > form > input:nth-of-type(6) {
+    margin: 0 auto;
+    color: #ebccc2;
+}
+
+#contact > article:last-of-type > form > input:nth-of-type(6):hover {
+    background: #867772;
+    cursor: pointer;
+}
