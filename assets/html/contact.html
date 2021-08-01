@@ -64,7 +64,7 @@
     <main>
         <section id="contact">
             <article></article>
-            <article>
+            <article id="formHide">
                 <h1>Get in Touch</h1>
                 <form action="">
                     <input type="text" id="fname" name="firstName" placeholder="First Name">
@@ -81,8 +81,15 @@
                     <input type="button" id="sendButton" name="sendButton" value="Submit" onclick="sendForm()">
                 </form>
             </article>
+            <article id="formShow">
+                <i class="far fa-hand-spock"></i>
+                <h1>Your email has been confirmed.
+                    thanks for subscribing!</h1>
+                <p>Now we just need to confirm email address - please click the link in the email we send you. Thanks!</p>    
+            </article>
         </section>
     </main>
+    <script src="https://kit.fontawesome.com/4b529e13e2.js" crossorigin="anonymous"></script>
     <script src="../js/main.js"></script>
 </body>
 </html>

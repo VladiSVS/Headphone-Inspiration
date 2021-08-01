@@ -14,4 +14,20 @@ function sendForm() {
     console.log("Country:" + " " + country)
     console.log("Address:" + " " + address)
     console.log("Message:" + " " + message)
+    document.getElementById("formHide").style = "display: none;"
+    document.getElementById("formShow").style = "display: flex;" 
 }
+
+let video = document.getElementById("video")
+
+video.addEventListener("click", 
+    function(){
+        video.muted = !video.muted // video muted
+        if (video.muted) {
+            document.getElementById("mute").style = "display: initial;"
+        } else {
+            document.getElementById("mute").style = "display: none;"
+        }
+    })
+
+

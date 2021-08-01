@@ -278,13 +278,17 @@ header > nav:last-of-type > ul > li > div{
     justify-content: center;
 }
 
-#insperationTop > article {
-    display: flex;
-    justify-content: center;
+#insperationTop > article > i {
+    position: absolute;
+    color: #2e2e2e;
+    margin-left: 2%;
+    margin-top: 1%;
+    font-size: 3em;
 }
 
 #insperationTop > article > video {
-    width: 55vw;
+    width: 100%;
+    cursor: pointer;
 }
 
 #insperationMid {
@@ -395,31 +399,28 @@ header > nav:last-of-type > ul > li > div{
     flex-direction: row;
 }
 
-#contact > article:first-of-type {
+#contact > article:nth-of-type(1) {
     width: 55%;
     height: 100vh;
     content: url(../img/section-composition4.jpg);
 }
 
-#contact > article:last-of-type {
-    padding: 5%;
-}
-
-#contact > article:last-of-type {
+#contact > article:nth-of-type(2) {
     width: 45%;
     height: 50vh;
+    padding: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#contact > article:last-of-type > form {
+#contact > article:nth-of-type(2) > form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-#contact > article:last-of-type > form > input {
+#contact > article:nth-of-type(2) > form > input {
     background: #2e2e2e;
     border: 1px solid #867772;
     font-family: 'Work-Sans-Light';
@@ -427,7 +428,7 @@ header > nav:last-of-type > ul > li > div{
     color: #767575;
 }
 
-#contact > article:last-of-type > form > textarea {
+#contact > article:nth-of-type(2) > form > textarea {
     background: #2e2e2e;
     border: 1px solid #867772;
     font-family: 'Work-Sans-Light';
@@ -438,7 +439,7 @@ header > nav:last-of-type > ul > li > div{
     margin: 2% 0;
 }
 
-#contact > article:last-of-type > form > select {
+#contact > article:nth-of-type(2) > form > select {
     background: #2e2e2e;
     border: 1px solid #867772;
     font-family: 'Work-Sans-Light';
@@ -446,32 +447,55 @@ header > nav:last-of-type > ul > li > div{
     color: #ebccc2;
 }
 
-#contact > article:last-of-type > form > input::placeholder {
+#contact > article:nth-of-type(2) > form > input::placeholder {
     padding-left: 0.5em;
 }
 
-#contact > article:last-of-type > form > textarea::placeholder {
+#contact > article:nth-of-type(2) > form > textarea::placeholder {
     padding-left: 0.5em;
     padding-top: 0.5em;
 }
 
-#contact > article:last-of-type > form > input:not(:nth-of-type(5)) {
+#contact > article:nth-of-type(2) > form > input:not(:nth-of-type(5)) {
     width: 48%;
     height: 25%;
     margin-bottom: 2%;
 }
 
-#contact > article:last-of-type > form > input:nth-of-type(5) {
+#contact > article:nth-of-type(2) > form > input:nth-of-type(5) {
     width: 81.5%;
     height: 20%;
 }
 
-#contact > article:last-of-type > form > input:nth-of-type(6) {
+#contact > article:nth-of-type(2) > form > input:nth-of-type(6) {
     margin: 0 auto;
     color: #ebccc2;
 }
 
-#contact > article:last-of-type > form > input:nth-of-type(6):hover {
+#contact > article:nth-of-type(2) > form > input:nth-of-type(6):hover {
     background: #867772;
     cursor: pointer;
+}
+
+#contact > article:nth-of-type(3) {  
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 5%;
+    height: 100vh;
+} 
+
+#contact > article:nth-of-type(3) > i {
+    font-size: 10em;
+    margin-bottom: 5%;
+    color: #ebccc2;
+}
+
+#contact > article:nth-of-type(3) > h1 {
+    text-align: center;
+}
+
+#contact > article:nth-of-type(3) > p {
+    text-align: center;
 }
