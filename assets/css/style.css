@@ -71,6 +71,15 @@ header {
     left: 5%;
 }
 
+.burger > i{
+    position: fixed;
+    display: none;
+    color: #ebccc2;
+    font-size: 3em;
+    top: 3%;
+    right: 5%;
+}
+
 header > nav:first-of-type {
     position: fixed;
     display: flex;
