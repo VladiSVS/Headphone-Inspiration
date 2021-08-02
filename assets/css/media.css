@@ -100,6 +100,22 @@
         width: 100%;
         height: 100vh;
     }
+
+    #contact {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #contact > article:first-of-type {
+        width: 100%;
+        height: 40vh;
+    }
+
+    #contact > article:nth-of-type(2) {
+        width: 60%;
+        height: 52vh;
+        justify-content: flex-start;
+    }
     
 }
 
@@ -113,14 +129,14 @@
         display: none;
     }
 
-    .burger > i{
+    .burger > i {
         position: fixed;
         display: initial;
         color: #ebccc2;
         z-index: 999;
         font-size: 3em;
         top: 3%;
-        right: 6.5%;
+        right: 5%;
     }
 
     header > nav:last-of-type {
@@ -134,37 +150,100 @@
 
     header > nav:last-of-type > ul {
         height: 100vh;
-        width: 20%;
         padding-top: 20%;
         padding-left: 2%;
-        padding-right: 2%;
+        padding-right: 7%;
         display: flex;
-        align-items: flex-start;
+        align-items: flex-end;
         justify-content: flex-start;
         flex-direction: column;
-        background: #2e2e2e;
     }
 
     header > nav:last-of-type > ul > li {
-        height: 10%;
+        height: 10vh;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    header > nav:last-of-type > ul > li:not(:last-of-type) > a {
+        font-size: 0.9em;
+        margin-right: 1em;
+        color: #ebccc2;
+        font-family: 'Work-Sans-Regular';
     }
 
     header > nav:last-of-type > ul > li > a {
-        font-size: 0.8em;
+        color: #ebccc2;
     }
 
-    header > nav:last-of-type > ul > li:last-of-type {
+    header > nav:last-of-type > ul > li:nth-of-type(7) {
         width: 100%;
         display: flex; 
         flex-direction: column;
+        justify-content: flex-end;
+        margin-top: 10vh;
+    }
+
+    header > nav:last-of-type > ul > li > i {
+        color: #ebccc2;
+    }
+
+    header > nav:last-of-type > ul > li:nth-of-type(7) > i {
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+    
+    header > nav:last-of-type > ul > li:last-of-type > a {
+        margin-right: 0.3em;
+    }
+
+    #mediaNav {
+        display: none;
+    }
+
+    #navCross {
+        display: none;
+    }
+
+    .circleNav {
+        border: 2px solid #867772;
+    }
+    
+    .outerCircle {
+        border: 2px solid #867772;
+        margin-top: -5px;
+        margin-left: -5px;
+    }
+    
+    .lineNav {
+        border: 2px solid #867772;
+        margin-top: 5px;
+        margin-left: 0.5em;
+    }
+
+    #lounger > article:last-of-type {
+        padding: 5% 10% 5% 10%;
+    }
+
+    #experience > article:last-of-type {
+        height: 45vh;
+        padding: 5% 10% 5% 10%;
+    }
+
+    #contact > article:first-of-type {
+        display: none;
+    }
+
+    #contact > article:nth-of-type(2) {
+        width: 60%;
+        height: 70vh;
         justify-content: center;
     }
 
-    header > nav:last-of-type > ul > li:last-of-type > i {
-        font-size: 2em;
-        margin-left: -1em;
-        margin-bottom: 0.5em;
-        color: #ebccc2;
+    #insperationDown {
+        padding: 10% 12%;
     }
 }    
 

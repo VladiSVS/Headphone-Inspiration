@@ -89,30 +89,30 @@ header > nav:first-of-type {
     width: 100%;
 }
 
-header > nav:first-of-type > ul > li > a:hover {
+header > nav:nth-of-type(1) > ul > li > a:hover {
     color: #ebccc2;
     border-bottom: 1px solid #ebccc2;
     padding-bottom: 0.3em;
     transition: 0.5s;
 }
 
-header > nav:first-of-type > ul {
+header > nav:nth-of-type(1) > ul {
     display: flex;
     justify-content: space-between;
     width: 30%;
     margin-right: 10%;
 }
 
-header > nav:first-of-type > ul > li:nth-of-type(2) {
+header > nav:nth-of-type(1) > ul > li:nth-of-type(2) {
     width: 40%;
     text-align: center;
 }
 
-header > nav:first-of-type > ul > li:nth-of-type(2) > a:not(:nth-of-type(3)) {
+header > nav:nth-of-type(1) > ul > li:nth-of-type(2) > a:not(:nth-of-type(3)) {
     margin-right: 5%;
 }
 
-header > nav:last-of-type {
+header > nav:nth-of-type(2) {
     position: fixed;
     display: flex;
     align-items: center;
@@ -121,7 +121,7 @@ header > nav:last-of-type {
     height: 100vh;
 }
 
-header > nav:last-of-type > ul {
+header > nav:nth-of-type(2) > ul {
     height: 70vh;
     display: flex;
     align-items: center;
@@ -129,27 +129,31 @@ header > nav:last-of-type > ul {
     justify-content: space-between;
 }
 
-header > nav:last-of-type > ul > li {
+header > nav:nth-of-type(2)> ul > li {
     display: flex;
     align-items: center;
 }
 
-header > nav:last-of-type > ul > li > a{
+header > nav:nth-of-type(2) > ul > li > a{
     text-align: left;
 }
 
-header > nav:last-of-type > ul > li > a:hover {
+header > nav:nth-of-type(2) > ul > li > a:hover {
     color: #ebccc2;
     font-family: 'Work-Sans-Regular';
     font-weight: bold;
     transition: 0.5s;
 }
 
-header > nav:last-of-type > ul > li > div{
+header > nav:nth-of-type(2) > ul > li > div{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-right: 1em;
+}
+
+header > nav:nth-of-type(3) {
+    display: none;
 }
 
 .circleNav {

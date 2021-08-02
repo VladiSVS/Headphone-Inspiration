@@ -20,7 +20,7 @@ function sendForm() {
 
 let video = document.getElementById("video")
 
-video.addEventListener("click", 
+video.addEventListener('click', 
     function(){
         video.muted = !video.muted // video muted
         if (video.muted) {
@@ -30,4 +30,15 @@ video.addEventListener("click",
         }
     })
 
+function downNav() {
+    document.getElementById("mediaNav").style = "display: none;"
+    document.getElementById("navCross").style = "display: none;"
+    document.getElementById("navBar").style = "display: block;"
+}  
+
+function upNav() {
+    document.getElementById("mediaNav").style = "display: block"
+    document.getElementById("navCross").style = "display: block;"
+    document.getElementById("navBar").style = "display: none;"
+}
 
