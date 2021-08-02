@@ -24,7 +24,7 @@ video.addEventListener('click',
     function(){
         video.muted = !video.muted // video muted
         if (video.muted) {
-            document.getElementById("mute").style = "display: initial;"
+            document.getElementById("mute").style = "display: block;"
         } else {
             document.getElementById("mute").style = "display: none;"
         }
