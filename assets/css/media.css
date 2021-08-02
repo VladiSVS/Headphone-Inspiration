@@ -256,6 +256,10 @@
         margin-top: 6vh;
     }
 
+    #about > article > div:first-of-type {
+        width: 100%;
+    }
+
     header > nav:last-of-type {
         width: 100%;
         background: #2e2e2e;
@@ -294,12 +298,12 @@
 
     #shop > article:last-of-type > button {
         padding: 5% 10%;
-        margin-top: 10%
+        margin-top: 10%;
     }
 
     #contact > article:nth-of-type(2) > form > input:not(:nth-of-type(5)) {
         width: 100%;
-        height: 5vh
+        height: 5vh;
     }
 
     #contact > article:nth-of-type(2) > form > select {
@@ -310,6 +314,7 @@
 
     #contact > article:nth-of-type(2) > form > input:nth-of-type(5) {
         width: 100%;
+        height: 5vh;
     }  
 
     #contact > article:nth-of-type(2) > form > textarea {
